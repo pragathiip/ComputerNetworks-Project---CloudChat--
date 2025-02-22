@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat and File Upload</title>
+    <script defer src="a.js"></script>
+</head>
+<body>
+    <h1>Chat Application</h1>
+
+    <!-- Authentication Section -->
+    <div id="auth-section">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="login-button">Login</button>
+    </div>
+
+    <!-- Chat Section (Hidden until authenticated) -->
+    <div id="chat-section" style="display:none;">
+        <label for="nickname-input">Set Nickname:</label>
+        <input type="text" id="nickname-input" placeholder="Enter your nickname">
+        <button id="set-nickname-button">Set Nickname</button>
+        <div id="chat-box" style="border: 1px solid black; height: 300px; overflow-y: scroll; margin: 10px 0;"></div>
+        <input type="text" id="message-input" placeholder="Enter your message">
+        <button id="send-message-button">Send Message</button>
+
+        <h2>File Upload</h2>
+        <input type="file" id="file-input">
+        <button id="upload-button">Upload File</button>
+        <h3>Download Files</h3>
+        <ul id="file-list"></ul>
+    </div>
+</body>
+</html>
